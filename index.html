@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- pagination start  -->
+    
+<nav aria-label="Page navigation example" style="margin: 20px;">
+    <ul class="pagination justify-content-center" id="pagination">
+      <!-- سيتم إنشاء أزرار الصفحات ديناميكيًا -->
+    </ul>
+  </nav>
+   <!-- pagination end -->
+  <!-- نافذة عرض الصورة -->
+  <div id="imageModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+    <div style="position: relative; background: #fff; padding: 20px; border-radius: 8px; max-width: 80%; text-align: center;">
+      <img id="modalImage" src="" alt="Image" style="max-width: 100%; max-height: 80vh; margin-bottom: 20px;">
+      <button id="downloadButton" style="padding: 10px 20px; background: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Download</button>
+      <button onclick="closeModal()" style="padding: 10px 20px; background: #dc3545; color: #fff; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">Close</button>
+    </div>
+  </div>
+     
+
+<!-- carousel start -->
+<div id="carouselExample" class="carousel slide" style="max-width: 800px; margin: 20px auto;">
+    <div class="carousel-inner">
+      <!-- سيتم إدخال الصور ديناميكيًا هنا -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <!-- الشبكة لعرض باقي الصور -->
+  <div id="gallery" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin: 20px;">
+    <!-- سيتم إدخال الصور ديناميكيًا هنا -->
+  </div>
+  
+<!-- carousel end  -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
