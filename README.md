@@ -1,2 +1,2 @@
-I make changes using pagination and carousel you can easily visit the website and download the image if you like it 
-I use HTML , CSS , dynamic javascript and API from unsplash website
+I utilized Unsplash API to dynamically fetch and display images, implemented pagination for better user experience, and added interactivity using dynamic HTML and JavaScript. Additionally, I designed a responsive carousel and styled the entire website using CSS to bring the project to life.
+you can scroll easily in the website if you like an image you can download it or close it 
